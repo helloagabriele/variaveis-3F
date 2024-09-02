@@ -28,3 +28,4 @@ listaDeDestinos.push(" fraiburgo")
 listaDeDestinos.push("são paulo")
 listaDeDestinos.push("londres")
 console.log(listaDeDestinos);
+
