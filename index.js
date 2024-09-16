@@ -1,14 +1,8 @@
-let idade=18;
-const anoNascimento= 2006;
-let anoAtual=2024;
-const nomeCompleto="helloa";
-console.log(" meu nome é " + nomeCompleto + " nascido no ano de " + anoNascimento + " e no ano atual " + anoAtual+ " completo "+ idade + " anos  ");
+const prompt = require('prompt-sync');
+const entrada = prompt();
 
-anoAtual=anoAtual+1;
-console.log(anoAtual);
 
-idade = idade +1;
-console.log(idade);
+
 
 
 
@@ -20,7 +14,8 @@ const listaDeDestinos= new Array(
   " rio de janeiro",
 "tóquio"
 );
-
+var nomeComprador = entrada("Digite seu nome: ");
+var idadeComprador= entrada("qual sua idade?");
 console.log(listaDeDestinos);
 console.log(listaDeDestinos[3]);
 listaDeDestinos.push("Coronel vivida");
@@ -29,13 +24,14 @@ listaDeDestinos.push("são paulo")
 listaDeDestinos.push("londres")
 console.log(listaDeDestinos);
 
-const idadeComprador= 15;
 
 if(idadeComprador >=18) {
+ console.log ("olá senhor (a) " + nomeComprador);
   console.log("comprador maior de idade");
 console.log("destino disponiveis: "+ listaDeDestinos);
 }else{
   console.log("não foi possivel concluir  compra");
 console.log("voce é menor de idade");
 }
+
 
