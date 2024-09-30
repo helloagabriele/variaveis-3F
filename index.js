@@ -23,7 +23,16 @@ listaDeDestinos.push(" fraiburgo")
 listaDeDestinos.push("são paulo")
 listaDeDestinos.push("londres")
 console.log(listaDeDestinos);
+const loginCerto = "helloa";
+const senhaCerta = 123;
 
+var login = entrada("qual é o seu login? ");
+var senha = entrada("Digite a sua senha: ")
+while(login != loginCerto || senha != senhaCerta){
+console.log ("Login ou senha incorretos");
+  login=entrada("qual é o seu login?");
+  senha=entrada("Digite a sua senha: ");
+}
 
 if(idadeComprador >=18) {
  console.log ("olá senhor (a) " + nomeComprador);
